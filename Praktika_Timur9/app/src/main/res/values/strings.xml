@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Praktik-zadanie3--Penkov</string>
+    <string name="author">Борисоглебский техникум промышленных и информационных техологий </string>
+    <string name="published">21 мая в 18:36</string>
+    <string name="osnovnoitext">ГБПОУ ВО «БТПИТ» образовано в соответствии с постановлением правительства Воронежской области от 20 мая 2015 года № 401 в результате реорганизации в форме слияния ГОБУ СПО ВО «БИТ», ГОБУ СПО ВО «БТИВТ» и ГОБУ НПО ВО «ПУ № 34 г. Борисоглебска»\nОбразовательно-производственный центр (кластер) федерального проекта\n\"Профессионалитет\" по отраслям «Туризм и сфера услуг» на базе ГБПОУ ВО \"ХШН\" и «Педагогика» на базе ГБПОУ ВО \"ГПК\" .\nКолледжи-партнеры: Базовая ОО - ГБПОУ ВО \"ХШН\"; сетевые ОО - ГБПОУ ВО \"БАИК\", ГБПОУ ВО \"ВГПГК\", ГБПОУ ВО \"ВТППП\", ГБПОУ ВО \"ВГПТК\", ГБПОУ ВО \"БТПИТ\".\nКолледжи-партнеры: Базовая ОО - ГБПОУ ВО \"ГПК\"; сетевые ОО - ГБПОУ ВО \"ВГПГК имени В.М. Пескова“, ГБПОУ ВО \"БТПИТ\".\nПодробнее о федеральном проекте «Профессионалитет» на сайте</string>
+    <string name="todo">TODO</string>
+    <string name="_10">10</string>
+    <string name="_5">1</string>
+    <string name="tritochki">Меню</string>
+    <string name="repostbnt">КнопкаРепоста</string>
+    <string name="like">Нравится</string>
+    <string name="share">Share</string>
+    <string name="txtpost2">Введите текст для поста</string>
+    <string name="delet">Удалить пост</string>
+    <string name="edit">Изменить пост</string>
+    <string name="error_empty_content">Пост не может добавиться, введите текст</string>
+    <string name="chooser_share_post">Поделиться постом</string>
+    <string name="description_post_save">Сохранить</string>
+    <string name="cancel">Отменить</string>
+    <string name="play">Включить</string>
+</resources>
+
+

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+>
+
+    <ImageButton
+        android:id="@+id/like"
+        android:layout_width="43dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FDF6FE"
+        android:contentDescription="@string/like"
+        android:src="@drawable/ic_like_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/osnovnoitext"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/tritochki"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="28dp"
+        android:background="@null"
+        android:contentDescription="@string/tritochki"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/osnovnoitext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/author"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tri"
+        tools:ignore="TouchTargetSizeCheck"   />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="avatar,published,tritochki" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/barrier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="osnovnoitext" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="274dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/author"
+        app:layout_constraintBottom_toTopOf="@id/published"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="@id/avatar" />
+
+    <TextView
+        android:id="@+id/published"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/published"
+        app:layout_constraintBottom_toBottomOf="@id/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="@id/author" />
+
+    <TextView
+        android:id="@+id/osnovnoitext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:autoLink="web"
+        android:lineSpacingExtra="6sp"
+        android:padding="10dp"
+        android:text="@string/osnovnoitext"
+        android:textSize="13sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier" />
+
+    <ImageButton
+        android:id="@+id/share"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FDF6FE"
+        android:contentDescription="@string/share"
+        app:layout_constraintStart_toEndOf="@+id/like"
+        app:layout_constraintTop_toBottomOf="@+id/osnovnoitext"
+        app:srcCompat="@drawable/rep"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textlike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/share"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toEndOf="@+id/like"
+        app:layout_constraintTop_toBottomOf="@+id/osnovnoitext"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/_5"
+        app:layout_constraintEnd_toStartOf="@+id/prosmotr"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toEndOf="@+id/share"
+        app:layout_constraintTop_toBottomOf="@+id/osnovnoitext" />
+
+    <TextView
+        android:id="@+id/textprosmotr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prosmotr"
+        app:layout_constraintTop_toBottomOf="@+id/osnovnoitext" />
+
+    <ImageView
+        android:id="@+id/prosmotr"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toEndOf="@+id/share"
+        app:layout_constraintTop_toBottomOf="@+id/osnovnoitext"
+        app:srcCompat="@drawable/glazz" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

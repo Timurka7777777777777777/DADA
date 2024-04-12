@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="like" type="id" />
+    <item name="tritochki" type="id" />
+    <item name="barrier" type="id" />
+    <item name="avatar" type="id" />
+    <item name="barrier2" type="id" />
+    <item name="author" type="id" />
+    <item name="published" type="id" />
+    <item name="osnovnoitext" type="id" />
+    <item name="share" type="id" />
+    <item name="textlike" type="id" />
+    <item name="textShare" type="id" />
+    <item name="textprosmotr" type="id" />
+    <item name="prosmotr" type="id" />
+    <item name="fab" type="id" />
+</resources>
